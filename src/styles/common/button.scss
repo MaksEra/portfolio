@@ -1,0 +1,32 @@
+.button {
+  background-color: $moss;
+  cursor: pointer;
+  font-family: "robotomedium";
+  color: $white;
+  &--welcome {
+    text-decoration: none;
+    display: inline-block;
+    padding: 4% 2%;
+    border-left: 3px solid $white;
+    &:first-child {
+      border: none;
+    }
+    &:hover {
+      background-color: $fern-green;
+    }
+  }
+  &--authorization {
+    flex: 1 1 auto;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border-left: 2px solid $white;
+    &:first-child {
+      border: none;
+    }
+    &:hover {
+      background-color: $fern-green;
+    }
+  }
+}

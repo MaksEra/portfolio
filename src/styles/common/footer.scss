@@ -1,0 +1,119 @@
+.footer {
+  font-family: "robotolight";
+  color: $white;
+  background-color: rgba($charcoal-grey, 0.85);
+  padding-top: 29px;
+  flex: 0 1 auto;
+  &__container {
+    display: flex;
+
+    &--top {
+      padding-bottom: 49px;
+      @include tablet {
+        padding-bottom: 9px;
+      }
+    }
+    &--bottom {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: initial;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+  &__column {
+    position: relative;
+    padding-left: 30px;
+    flex: 1 1;
+    padding-right: 30px;
+    &:after {
+      content: "";
+      width: 1px;
+      height: 100%;
+      opacity: 0.2;
+      background-color: $white;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    @include tablet {
+      flex: 1 1 50%;
+      padding-right: 30px;
+    }
+    @include mobile {
+      flex: 1 1 100%;
+      padding: 0;
+      margin-bottom: 30px;
+      &:after {
+        display: block;
+        width: 90%;
+        top: initial;
+        bottom: -15px;
+        right: 0;
+        left: 5%;
+        height: 2px;
+      }
+    }
+  }
+  &__column--left {
+    padding-left: 0;
+  }
+  &__about {
+    line-height: 1.5;
+  }
+  &__column--center {
+    @include tablet {
+      padding-right: 0;
+      &:after {
+        display: none;
+      }
+    }
+    @include mobile {
+      &:after {
+        display: block;
+      }
+    }
+  }
+  &__pages-list {
+  }
+  &__socials {
+    .social-list__item {
+    }
+  }
+  &__column--right {
+    padding-right: 0;
+    &:after {
+      display: none;
+    }
+    @include tablet {
+      padding-left: 0;
+      margin-top: 10px;
+    }
+  }
+  &__quote {
+    color: $white-50;
+    line-height: 1.63;
+  }
+  &__quote-author {
+    font-family: "robotobold_italic";
+    opacity: 0.85;
+  }
+  &__copyright {
+    padding-top: 9px;
+    padding-bottom: 12px;
+    flex: 1 1 100%;
+    text-align: center;
+    background-color: rgba($moss, 0.85);
+  }
+  &--about {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  @include mobile {
+    text-align: center;
+  }
+}

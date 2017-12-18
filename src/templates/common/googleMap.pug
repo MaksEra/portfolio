@@ -1,0 +1,102 @@
+script( async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxwsCOLEqm5ntL0DEKUbNrow99lFSlmFg&callback=initMap")
+script.
+	function initMap() {
+		var saintP = { lat: 59.949981, lng: 30.315649 };
+		var map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 13,
+			center: saintP,
+			disableDefaultUI: true,
+			zoomControl: false,
+			//scrollwheel: boolean,
+			styles: [
+				{
+					featureType: "administrative.locality",
+					elementType: "labels.text.fill",
+					stylers: [
+						{
+							color: "#444"
+						}
+					]
+				},
+				{
+					featureType: "landscape",
+					elementType: "all",
+					stylers: [
+						{
+							color: "#f2f2f2"
+						}
+					]
+				},
+				{
+					featureType: "poi",
+					elementType: "all",
+					stylers: [
+						{
+							visibility: "off"
+						}
+					]
+				},
+				{
+					featureType: "road",
+					elementType: "all",
+					stylers: [
+						{
+							saturation: "-100"
+						},
+						{
+							lightness: "1"
+						},
+						{
+							gamma: "1.44"
+						},
+						{
+							weight: "2.70"
+						}
+					]
+				},
+				{
+					featureType: "road.highway",
+					elementType: "all",
+					stylers: [
+						{
+							visibility: "simplified"
+						}
+					]
+				},
+				{
+					featureType: "road.arterial",
+					elementType: "labels.icon",
+					stylers: [
+						{
+							visibility: "off"
+						}
+					]
+				},
+				{
+					featureType: "transit",
+					elementType: "all",
+					stylers: [
+						{
+							visibility: "off"
+						}
+					]
+				},
+				{
+					featureType: "water",
+					elementType: "all",
+					stylers: [
+						{
+							color: "#86a77a"
+						},
+						{
+							visibility: "on"
+						}
+					]
+				}
+			]
+		});
+		var marker = new google.maps.Marker({
+			position: saintP,
+			map: map
+		});
+	}

@@ -1,0 +1,44 @@
+.code-block {
+  position: relative;
+  &__pre {
+    background: $code-background;
+    padding: 1em;
+    padding-left: 4.2em;
+    counter-reset: line;
+  }
+  &__code {
+  }
+  &__keyword {
+    color: #090a09;
+  }
+  &__punctuation {
+    color: #adaead;
+  }
+  &__operator {
+    color: #adaead;
+  }
+  &__comment {
+    color: #adaead;
+  }
+  &__string {
+    color: #76a31d;
+  }
+  &__numbers-row {
+    padding: 1em 1em 1em 2em;
+    background: #e7e5e3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-align: right;
+    span {
+      display: block;
+      &:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        color: #888;
+      }
+    }
+  }
+}

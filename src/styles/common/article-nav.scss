@@ -1,0 +1,33 @@
+.articles-nav {
+  font-family: "robotobold";
+  flex: 1 1 28%;
+  text-align: right;
+  margin-right: 130px;
+  &__list {
+    width: 70%;
+    margin-left: auto;
+  }
+  &__item {
+    position: relative;
+    margin-bottom: 36px;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    &:hover {
+      color: $fern-green;
+    }
+    &--active {
+      color: $fern-green;
+      &:after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -7%;
+        width: 3px;
+        height: 200%;
+        background-color: $moss;
+      }
+    }
+  }
+}

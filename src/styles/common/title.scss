@@ -1,0 +1,47 @@
+.title {
+  text-transform: uppercase;
+  font-family: "sansus";
+  font-size: 63px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 69px;
+  &--underlined {
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -22%;
+      left: 50%;
+      width: 90px;
+      height: 3px;
+      background-color: $charcoal-grey;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__svg-works {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    z-index: -10;
+    opacity: 0.1;
+    fill: $sick-green;
+  }
+  &--works {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 69px;
+    z-index: 10;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+  @include tablet {
+    font-size: 35px;
+    margin-bottom: 35px;
+  }
+  @include mobile {
+    font-size: 21px;
+  }
+}

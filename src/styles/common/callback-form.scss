@@ -1,0 +1,84 @@
+.callback-form {
+  margin: 0 auto;
+  margin-bottom: 156px;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  background-color: rgba(#e0e1dd, 0.6);
+  border-radius: 5px;
+  padding-top: 32px;
+  overflow: hidden;
+  &__title {
+    font-size: 30px;
+    &:after {
+      bottom: -63%;
+    }
+    @include tablet {
+      width: 96%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include mobile {
+      font-size: 21px;
+    }
+  }
+  &__name {
+    width: 80%;
+    border: none;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 16px 20px 16px 20px;
+    outline: none;
+  }
+  &__email {
+    width: 80%;
+    border: none;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 16px 20px 16px 20px;
+    outline: none;
+  }
+  &__comment {
+    width: 80%;
+    border: none;
+    border-radius: 30px;
+    resize: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 140px;
+    padding: 16px 20px 16px 20px;
+    outline: none;
+  }
+  &__button-row {
+    display: flex;
+  }
+  &__submit {
+    flex: 1 1 50%;
+    border: none;
+    padding: 15px 0 17px 0;
+    border-right: 1px solid #fff;
+    background-color: rgba($moss, 0.6);
+    &:hover {
+      background-color: rgba($fern-green, 1);
+    }
+  }
+  &__reset {
+    flex: 1 1 50%;
+    border: none;
+    padding: 15px 0 17px 0;
+    border-left: 1px solid #fff;
+    background-color: rgba($moss, 0.6);
+    &:hover {
+      background-color: rgba($fern-green, 1);
+    }
+  }
+
+  @include tablet {
+    max-width: 320px;
+    width: 94%;
+  }
+  //   input::-moz-placeholder {...}
+  //   textarea::-moz-placeholder {...}
+}

@@ -1,0 +1,46 @@
+.feeds-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 67px;
+  margin-left: -20px;
+  margin-top: -20px;
+  &__item {
+    flex: 0 1 50%;
+    max-width: 380px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  &__picture {
+    width: 77px;
+    height: 77px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 21px;
+  }
+  &__img {
+    width: 100%;
+    max-width: 100%;
+  }
+  &__description {
+  }
+  &__text {
+    line-height: 1.63;
+    font-family: "robotoitalic";
+    color: #5d5a55;
+    margin-bottom: 29px;
+  }
+  &__author {
+    color: $fern-green;
+    font-family: "robotobold";
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__amplua {
+    color: $charcoal-grey;
+    font-family: "robotoitalic";
+    text-align: center;
+  }
+  @include mobile {
+    flex-direction: column;
+  }
+}

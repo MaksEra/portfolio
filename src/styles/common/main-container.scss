@@ -1,0 +1,19 @@
+.main {
+  position: relative;
+  flex: 1 1 auto;
+
+  &__container {
+    &--articles {
+      display: flex;
+    }
+  }
+
+  &--articles {
+    display: flex;
+    padding-top: 68px;
+    padding-bottom: 66px;
+  }
+  &--about-me {
+    padding-top: 20px;
+  }
+}

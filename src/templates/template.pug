@@ -1,0 +1,31 @@
+block variables
+
+include mixin
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        link(rel="shortcut icon" sizes="16x16" href="assets/img/favico.png")
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        link(rel='stylesheet' href='assets/styles/main.min.css')
+        script(src='assets/js/bundle.js')
+    body
+        div(class=`wrapper ${wrapperClassName}`)
+            - if (onPage) {
+            include common/header
+            include common/main
+            include common/footer
+            - }
+            block content
+            block maps
+            
+
+        //- доп скрипты
+        block scripts
+
+        

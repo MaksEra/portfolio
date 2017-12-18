@@ -1,0 +1,61 @@
+extends ../template
+
+block variables
+    - var title = 'Добро пожаловать!';
+    - var wrapperClassName = 'wrapper__welcome';
+    - var onPage = false;
+
+block content
+    a(href='#').authorization-button Авторизоваться
+    .flipper
+        .flipper__wrapper
+            .flipper__welcome.welcome
+                .welcome__top
+                    .welcome__pic
+                        img(class='welcome__img' src=("assets/img/content/avatar.jpg"))
+                .welcome__bottom
+                    .welcome__name-text.
+                        Максим Егоров
+                    .welcome__text-amplua.
+                        Личный сайт веб разработчика
+                    +socialListMixin('welcome__socials', [['vk','https://vk.com/maks_era'],['github','https://github.com/MaksEra'],['in','#']])
+                    .welcome__button-row
+                        a(href='my-works.html').button.button--welcome.welcome__works Мои работы
+                        a(href='about.html').button.button--welcome.welcome__about Обо мне
+                        a(href='blog.html').button.button--welcome.welcome__blog Блог
+            
+            .flipper__authorization.authorization
+                h1.title.title--underlined.authorization__title Авторизуйтесь
+                form(action="authorization.php")
+                    .authorization__wrapper-form
+                        label.authorization__label
+                            svg.authorization__input-svg
+                                use(xlink:href=(`assets/img/icons/sprite.svg`)+'#login')
+                            input(type="text" name='user_login' placeholder='Логин' class="authorization__input" required)
+                        label.authorization__label
+                            svg.authorization__input-svg
+                                use(xlink:href=(`assets/img/icons/sprite.svg`)+"#password")
+                            input(type="text" name='user_login' placeholder='Пароль' class="authorization__input" required)
+                        <label class="authorization__label-isHuman">
+                            <input type="checkbox" name="user_isHuman" class="authorization__input authorization__input--checkbox" value='yes'>
+                            <div class="authorization__checkbox-fake"></div>
+                            <div class="authorization__input-text">Я человек</div>
+                        </label>
+                        h5.title.authorization__title-isHuman Вы точно не робот?
+                        <div class="authorization__row">
+                            <label class="authorization__label-radio authorization__label-radio--yes">
+                                <input name="user_isntRobot" type="radio" class="authorization__input  authorization__input--radio" value='yes' >
+                                <div class="authorization__radio-fake"></div>
+                                <div class="authorization__input-text">Да</div>
+                            </label>
+                            <label class="authorization__label-radio authorization__label-radio--no">
+                                <input name="user_isntRobot" type="radio" class="authorization__input authorization__input--radio"  value='card' checked>
+                                <div class="authorization__radio-fake"></div>
+                                <div class="authorization__input-text">Не уверен</div>
+                            </label>
+                        </div>
+                        <div class="authorization__row">
+                            a(href='#').button.button--authorization.authorization__to-main На главную 
+                            <button type="submit" class="button button--authorization authorization__submit ">Войти</button>
+                        </div>
+    .welcome-copyright &copy; Максим Егоров | создано с любовью в LoftSchool | 2017

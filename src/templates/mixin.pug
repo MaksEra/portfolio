@@ -1,0 +1,15 @@
+mixin svgTemp(className, svgId)
+    svg(class=`${className} ${className}--${svgId}` )
+        use(xlink:href=("assets/img/icons/sprite.svg")+ '#' + svgId)
+
+//- - var values = [['vk','https://vk.com/maks_era'],['github','https://github.com/MaksEra'],['in','#']];
+
+mixin socialListMixin(elemClassName, values)
+    ul(class=`${elemClassName} social-list`) 
+        //- социалки в хедере
+        each val in values
+            li(class="social-list__item")   
+                a(class="social-list__link" href=val[1])
+                    svg(class=`social-list__icon social-list__icon--${val[0]}` )
+                        use(xlink:href=("assets/img/icons/sprite.svg")+ '#' + val[0])
+

@@ -1,0 +1,35 @@
+//colors
+$white: #fff;
+$light-grey: #ebefe2;
+$light-grey-two: #f4f5f0;
+$light-grey-three: #f8f9f5;
+$black-35: rgba(0, 0, 0, 0.35);
+$black: #020202;
+$charcoal-grey: #373e42;
+$pale-grey: #e9e7e8;
+$dark-sage: #566358;
+$moss: #6c9c5a;
+$sick-green: #93c42e;
+$white-50: rgba(255, 255, 255, 0.5);
+$white-two: #e2e2e2;
+$light-grey-four: #dfdcd5;
+$slate-80: rgba(69, 90, 100, 0.8);
+$fern-green: #4e8839;
+$dark-sage-80: rgba(86, 99, 88, 0.8);
+$beige: #faf8f0;
+$slate: #455a64;
+$fern-green-70: rgba(78, 136, 57, 0.7);
+$code-background: #f5f2f0;
+/////////////////////////////////////////
+$link-primary: $white;
+$text-primary: $slate;
+
+//resolutions
+//$pc: 1200px;
+//$tablets: 768px;
+//$phones: 480px;
+
+//vars
+@import '/node_modules/normalize.css/normalize.css';
+@import 'config/**/*.scss';
+@import 'common/**/*.scss';

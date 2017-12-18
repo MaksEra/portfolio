@@ -1,0 +1,201 @@
+.my-works {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 750px;
+  margin-bottom: 71px;
+
+  &__slider {
+    width: 50%;
+    height: 70%;
+    background-color: #e1e4d7;
+    flex: 0 0 auto;
+    order: 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+      order: initial;
+      width: 100%;
+      padding: 5%;
+    }
+    @include mobile {
+    }
+  }
+  &__slider-img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &__decription {
+    width: 50%;
+    height: 100%;
+    background-color: $light-grey;
+    order: 1;
+    flex: 0 0 auto;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include tablet {
+      order: initial;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__decription-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    @include tablet {
+      position: initial;
+      text-align: center;
+      transform: initial;
+      margin: 0 auto;
+    }
+    @include tablet {
+      width: 96%;
+    }
+  }
+  &__slider-buttons {
+    width: 50%;
+    height: 30%;
+    background-color: #f1ede1;
+    flex: 0 0 auto;
+    order: 3;
+    display: flex;
+    @include tablet {
+      order: initial;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__site-name {
+    text-align: center;
+    position: relative;
+    margin-bottom: 59px;
+    font-size: 35px;
+    font-family: "sansus";
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -36%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 89px;
+      height: 3px;
+      background-color: $dark-sage;
+    }
+    @include mobile {
+      font-size: 21px;
+      margin-bottom: 26px;
+    }
+  }
+  &__site-technogies {
+    color: $fern-green;
+    font-family: "robotomedium";
+    margin-bottom: 58px;
+    @include mobile {
+      margin-bottom: 17px;
+    }
+  }
+  &__site-link {
+    font-family: "robotomedium";
+    width: 250px;
+    border-radius: 50px;
+    background-color: $moss;
+    padding: 16px 21px 13px 18px;
+    display: inline-block;
+    margin: 0 auto;
+    color: $link-primary;
+    text-decoration: none;
+    text-transform: initial;
+    vertical-align: middle;
+  }
+  &__svg-link {
+    width: 20px;
+    height: 19px;
+    vertical-align: middle;
+    fill: $link-primary;
+    margin-right: 12px;
+  }
+  &__button-left {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 50%;
+    flex: 1 1 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e4d7;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(176, 183, 170, 0.7);
+      opacity: 0.5;
+    }
+  }
+  &__button-right {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 50%;
+    flex: 1 1 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e4d7;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(176, 183, 170, 0.7);
+      opacity: 0.5;
+    }
+  }
+  &__img {
+    max-width: 100%;
+    width: 100%;
+  }
+  &__arrow-down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 43px;
+    height: 27px;
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.16);
+    fill: $white;
+  }
+  &__arrow-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 43px;
+    height: 27px;
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.16);
+    fill: $white;
+  }
+  @include tablet {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  @include mobile {
+    margin-bottom: 35px;
+  }
+}

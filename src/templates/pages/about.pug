@@ -1,0 +1,81 @@
+extends ../template
+
+block variables
+    - var title = 'Обо мне';
+    - var wrapperClassName = 'wrapper__about';
+    - var header_modif = 'header__about'
+    - var footer_modif = 'footer__about';
+    - var onPage = true;
+
+block scripts
+    include ../common/googleMap
+
+block headerSvg
+    +svgTemp("header__svg-portfolio", 'portfolio_header')
+
+block person-card
+    div(class="header__avatar person-card") 
+        .person-card__top
+            .person-card__pic
+                img(class='person-card__img' src=("assets/img/content/avatar.jpg"))
+        .person-card__bottom
+            .person-card__fio.
+                Максим Егоров
+            .person-card__whoIsSite.
+                Личный сайт веб разрабочика
+//- контент
+block main 
+    main(class='main main--about-me')
+        section.about-me 
+            +svgTemp('about-me__bg-left', 'about_bg_left')
+            +svgTemp('about-me__bg-right', 'about_bg_right')
+            .about-me__description
+                h1.title.title--underlined.about-me__title-about Обо мне
+                    +svgTemp('about-me__svg-about', 'about_header')
+                .about-me__pic
+                    img(src=('assets/img/content/avatar.jpg')).about-me__img
+                h1.title.title--underlined.about-me__title-whoIsI Кто я
+                .about-me__text
+                    p Я веб разработчик из Санкт-Петербурга. Мне 24 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+            .about-me__skills
+                h1.title.title--underlined.about-me__title-myBenefit Чем я могу быть вам полезен
+                .about-me__skills-text.
+                    Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                ul.about-me__skills-list
+                    li.about-me__skills-item.about-me__skills-item--frontend
+                        .about-me__title-skills Frontend
+                        ul.about-me__circle-list
+                            li.about-me__circle-item HTML5
+                            li.about-me__circle-item CSS3
+                            li.about-me__circle-item JS<br>& jQuery
+                    li.about-me__skills-item.about-me__skills-item--backend
+                        .about-me__title-skills Backend
+                        ul.about-me__circle-list
+                            li.about-me__circle-item PHP
+                            li.about-me__circle-item mySQL
+                            li.about-me__circle-item Node.js<br>& npm
+                            li.about-me__circle-item Mongo.db
+                    li.about-me__skills-item.about-me__skills-item--workflow
+                        .about-me__title-skills WorkFlow
+                        ul.about-me__circle-list
+                            li.about-me__circle-item Git
+                            li.about-me__circle-item Gulp
+                            li.about-me__circle-item Bower
+        section.contacts
+            .map#map
+            .contacts__wrapper
+                h1.title.title--underlined.contacts__title Контакты
+                
+                - var icons = [['skype', 'skype'], ["envelope2",'makseraus@gmail.com'], ['phone2','+7 (999) 037-50-45'], ['map_marker','Санкт-Петербург, Невский проспект, д.1' ]]
+                ul.contacts__list
+                    //- цикл для списка контактов
+                    each val in icons
+                        li.contacts__item
+                            svg.contacts__svg
+                                use(xlink:href=('assets/img/icons/sprite.svg')+"#"+`${val[0]}`)
+                            | #{val[1]}
+
+    
+                        
+                    

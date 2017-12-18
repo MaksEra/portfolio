@@ -1,0 +1,214 @@
+.about-me {
+  display: flex;
+  position: relative;
+
+  &__description {
+    position: relative;
+    display: flex;
+    padding-right: 30px;
+    flex-direction: column;
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+    background-color: $light-grey;
+
+    @include tablet {
+      flex: 1 1 100%;
+      margin-right: 0;
+      align-items: center;
+      padding-right: 0;
+      padding-bottom: 20px;
+    }
+  }
+  &__skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    @include tablet {
+      padding-top: 29px;
+      flex: 1 1 100%;
+      align-items: center;
+      padding-left: 0;
+    }
+  }
+  &__bg-right {
+    fill: $white;
+    position: absolute;
+    top: -152px;
+    right: 0;
+    width: 50%;
+    height: 669.986px;
+    @include tablet {
+      fill: $light-grey;
+      height: 369px;
+      top: -94px;
+    }
+    @include mobile {
+      height: 200px;
+    }
+  }
+  &__bg-left {
+    fill: $light-grey;
+    position: absolute;
+    top: -154px;
+    left: 0;
+    width: 50%;
+    height: 669.986px;
+    @include tablet {
+      height: 369px;
+      top: -94px;
+    }
+    @include mobile {
+      height: 200px;
+    }
+  }
+  &__title-about {
+    height: 100%;
+    width: 50%;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    &:after {
+      top: 80px;
+    }
+    @include big-tablet {
+      font-size: 45px;
+      margin-bottom: 20px;
+      &:after {
+        top: 58px;
+      }
+    }
+    @include mobile {
+      font-size: 35px;
+      &:after {
+        top: 47px;
+      }
+    }
+  }
+  &__svg-about {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    fill: $sick-green;
+    z-index: -1;
+    opacity: 0.1;
+    @include tablet {
+      top: 50%;
+    }
+  }
+  &__pic {
+    width: 50%;
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 18px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 100%;
+    max-width: 100%;
+  }
+  &__title-whoIsI {
+    width: 50%;
+    font-size: 35px;
+    margin-bottom: 61px;
+    &:after {
+      top: 56px;
+    }
+    @include tablet {
+      font-size: 30px;
+      margin-bottom: 39px;
+    }
+    @include mobile {
+      font-size: 21px;
+    }
+  }
+  &__text {
+    width: 50%;
+    p {
+      margin-bottom: 20px;
+    }
+    @include mobile {
+      width: 90%;
+    }
+  }
+
+  &__title-myBenefit {
+    font-size: 35px;
+    margin-bottom: 35px;
+    &:after {
+      top: 56px;
+    }
+    @include big-tablet {
+      font-size: 26px;
+    }
+    @include tablet {
+      width: 50%;
+    }
+    @include mobile {
+      font-size: 21px;
+      width: 65%;
+    }
+  }
+
+  &__skills-text {
+    margin-bottom: 36px;
+    @include tablet {
+      width: 50%;
+    }
+    @include mobile {
+      width: 90%;
+    }
+  }
+  &__skills-list {
+    @include tablet {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__skills-item {
+    margin-bottom: 18px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title-skills {
+    font-size: 28px;
+    font-family: "robotomedium";
+    color: $dark-sage;
+    margin-bottom: 10px;
+    @include mobile {
+      font-size: 21px;
+    }
+  }
+  &__circle-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-top: -20px;
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  &__circle-item {
+    flex: 0 0 120px;
+    height: 120px;
+    background: rgb(77, 190, 77);
+    margin-left: 20px;
+    margin-top: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @include tablet {
+    flex-direction: column;
+  }
+}

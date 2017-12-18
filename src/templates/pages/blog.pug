@@ -1,0 +1,89 @@
+extends ../template
+
+block variables
+    - var title = 'Блог';
+    - var wrapperClassName = 'wrapper__blog';
+    - var onPage = true;
+
+block main 
+    main(class='main main--articles')
+        .container.main__container.main__container--articles
+            aside(class="articles-nav")
+                - 
+                    var 
+                    articles_themes = [
+                        'Приёмы в вёрстке, без которых не обходится ни один сайт',
+                        'Самый необходимый набор Gulp плагинов',
+                        'Почему я выбрал Jade'
+                        ];
+                ul(class="articles-nav__list")
+                    //ПОтом пересмотреть и может как то исправить 
+                    li(class="articles-nav__item articles-nav__item--active").
+                        Самое важное в SASS
+                    each theme in articles_themes
+                        li(class="articles-nav__item")= theme
+                            
+                            
+                        
+            ul.article-list
+                li(class="article-list__item")
+                    .article-list__item-title.
+                        Самое важное в SASS
+                    .article-list__item-date.
+                        22 ноября 2016
+                    .article-list__item-text.
+                        Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                        Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    .article-list__item-code
+                        .code-block
+                            pre.code-block__pre
+                                code.code-block__code
+                                    span(class="code-block__comment") //присвоить
+                                    |
+                                    |
+                                    span(class="code-block__keyword") $
+                                    span(class="code-block__punctuation") (
+                                    span(class="code-block__keyword") document
+                                    span(class="code-block__punctuation") ).
+                                    span(class="code-block__keyword") data
+                                    span(class="code-block__punctuation") (
+                                    span(class="code-block__string") 'prop' 
+                                    span(class="code-block__punctuation") , { 
+                                    span(class="code-block__keyword") anything
+                                    span(class="code-block__punctuation") : 
+                                    span(class="code-block__string") "любой объект" 
+                                    span(class="code-block__punctuation") })
+                                    |
+                                    |
+                                    |
+                                    span(class="code-block__comment") //прочитать
+                                    |
+                                    |
+                                    span(class="code-block__keyword") $
+                                    span(class="code-block__punctuation") (
+                                    span(class="code-block__keyword") document
+                                    span(class="code-block__punctuation") ).
+                                    span(class="code-block__keyword") data
+                                    span(class="code-block__punctuation") (
+                                    span(class="code-block__string") 'prop' 
+                                    span(class="code-block__punctuation") , { 
+                                    span(class="code-block__keyword") anything
+                                    span(class="code-block__punctuation") : 
+                                    span(class="code-block__string") "любой объект" 
+                                    span(class="code-block__punctuation") })
+                                span.code-block__numbers-row
+                                    span
+                                    span
+                                    span
+                                    span
+                                    span
+                            
+                li(class="article-list__item")
+                    .article-list__item-title.
+                        Приёмы в вёрстке, без которых не обходится ни один сайт
+                    .article-list__item-date.
+                        13 ноября 2016
+                    .article-list__item-text.
+                        Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                        Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    .article-list__item-code  

@@ -1,0 +1,22 @@
+header(class=`header ${header_modif}`)
+                .container.haeder__container
+                    //- svg для фона
+                    block headerSvg
+                    svg(class="header__triangle"  width="100%" )
+                        use(xlink:href=("assets/img/icons/sprite.svg") +"#bg")
+                    +socialListMixin('header__socials', [['vk','https://vk.com/maks_era'],['github','https://github.com/MaksEra'],['in','#']])
+                    
+                    block person-card
+                        div(class="header__avatar person-card") 
+                            .person-card__top
+                                .person-card__pic
+                                    img(class='person-card__img' src=("assets/img/content/avatar.jpg"))
+                            .person-card__bottom
+                                .person-card__name-text Блог
+                                    +svgTemp("person-card__svg-blog", 'blog_header')
+                                .person-card__text-amplua.
+                                    Статьи, которые я написал
+                    div(class="header__hamburger-menu")
+                        a(href="#" class="hamburger")
+                            span
+                    a(href='#' class="bottom-arrow" data-scroll-to="1")
