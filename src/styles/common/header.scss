@@ -1,7 +1,7 @@
 .header {
   position: relative;
   background: url("../img/bg/water.jpg") center center no-repeat;
-  background-position: cover;
+  background-size: cover;
   padding-top: 101px;
   padding-bottom: 50px;
   flex: 0 0 auto;
@@ -29,8 +29,8 @@
 
   &__socials {
     position: absolute;
-    top: -57px;
-    left: 3px;
+    top: -60px;
+    left: 1%;
     @include mobile {
       top: -77px;
     }
@@ -44,10 +44,10 @@
   }
   &__hamburger-menu {
     position: absolute;
-    top: -73px;
-    right: 3%;
+    top: -75px;
+    right: 0px;
     @include mobile {
-      top: -93px;
+      top: 1%;
     }
     &--z-indexed {
       z-index: 20;
@@ -92,8 +92,8 @@
     }
   }
 
-  &--works {
-    margin-bottom: 60px;
+  &__works {
+    margin-bottom: 30px;
   }
   @include mobile {
     padding-bottom: 204px;

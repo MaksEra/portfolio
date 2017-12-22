@@ -1,11 +1,11 @@
 header(class=`header ${header_modif}`)
                 svg(class="header__triangle" width="100%")
                     use(xlink:href=("assets/img/icons/sprite.svg") +"#bg")
-                .container.haeder__container
+                .container.header__container
                     //- svg для фона
-                    block headerSvg
                     +socialListMixin('header__socials', [['vk','https://vk.com/maks_era'],['github','https://github.com/MaksEra'],['in','#']])
-                    
+                    block headerSvg
+
                     block person-card
                         div(class="header__avatar person-card") 
                             .person-card__top
@@ -16,8 +16,25 @@ header(class=`header ${header_modif}`)
                                     +svgTemp("person-card__svg-blog", 'blog_header')
                                 .person-card__text-amplua.
                                     Статьи, которые я написал
-                    div(class="header__hamburger-menu")
-                        a(href="#" class="hamburger")
+                    //-div(class="header__hamburger-menu")
+                        //-a(href="#" class="hamburger")
                             span
-                    +pagesListMixin('header__pages-list',[['Мои работы','my-works.html'],['Обо мне','./about.html'],['Блог','./blog.html'],['Авторизация','/']], pagesListActiveItem)
-                    a(href='#' class="bottom-arrow" data-scroll-to="1")
+                .hamburger-menu
+                        .hamburger-menu-toggle#ham-toggle
+                            .one
+                            .two
+                            .three
+                        nav.hamburger-menu__nav
+                            ul(role="navigation").nav__list.hidden
+                                li.nav__list-item
+                                    a(href="my-works.html" class="nav__link")
+                                        span.nav__link-text Мои работы
+                                li.nav__list-item
+                                    a(href="blog.html" class="nav__link")
+                                        span.nav__link-text Блог
+                                li.nav__list-item
+                                    a(href="about.html" class="nav__link")
+                                        span.nav__link-text Обо мне
+                                li.nav__list-item
+                                    a(href="index.html" class="nav__link")
+                                        span.nav__link-text Авторизация

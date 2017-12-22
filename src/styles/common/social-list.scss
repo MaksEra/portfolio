@@ -6,9 +6,9 @@
     font-size: 0px;
     margin-right: 24px;
     opacity: 0.5;
+    transition: .3s;
     &:hover {
       opacity: 1;
-      color: $fern-green;
     }
     &:last-child {
       margin-right: 0;
@@ -24,5 +24,9 @@
     width: 100%;
     height: 100%;
     fill: $link-primary;
+    transition: .3s;
+    &:hover {
+      fill: $fern-green;
+    }
   }
 }
