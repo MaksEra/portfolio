@@ -14,12 +14,12 @@
   <body>
     <div class="wrapper wrapper__about">
       <header class="header header__about">
+        <svg class="header__triangle" width="100%">
+          <use xlink:href="assets/img/icons/sprite.svg#bg"></use>
+        </svg>
         <div class="container haeder__container">
           <svg class="header__svg-portfolio header__svg-portfolio--portfolio_header">
             <use xlink:href="assets/img/icons/sprite.svg#portfolio_header"></use>
-          </svg>
-          <svg class="header__triangle" width="100%">
-            <use xlink:href="assets/img/icons/sprite.svg#bg"></use>
           </svg>
           <ul class="header__socials social-list"> 
             <li class="social-list__item">  <a class="social-list__link" href="https://vk.com/maks_era">
@@ -44,7 +44,13 @@
               <div class="person-card__whoIsSite">Личный сайт веб разрабочика</div>
             </div>
           </div>
-          <div class="header__hamburger-menu"><a class="hamburger" href="#"><span></span></a></div><a class="bottom-arrow" href="#" data-scroll-to="1"></a>
+          <div class="header__hamburger-menu"><a class="hamburger" href="#"><span></span></a></div>
+          <ul class="header__pages-list pages-list"> 
+            <li class="pages-list__item"><a class="pages-list__link" href="my-works.html">Мои работы</a></li>
+            <li class="pages-list__item pages-list__item--active">  <a class="pages-list__link" href="./about.html">Обо мне</a></li>
+            <li class="pages-list__item"><a class="pages-list__link" href="./blog.html">Блог</a></li>
+            <li class="pages-list__item"><a class="pages-list__link" href="/">Авторизация</a></li>
+          </ul><a class="bottom-arrow" href="#" data-scroll-to="1"></a>
         </div>
       </header>
       <main class="main main--about-me">
@@ -75,26 +81,75 @@
               <li class="about-me__skills-item about-me__skills-item--frontend">
                 <div class="about-me__title-skills">Frontend</div>
                 <ul class="about-me__circle-list">
-                  <li class="about-me__circle-item">HTML5</li>
-                  <li class="about-me__circle-item">CSS3</li>
-                  <li class="about-me__circle-item">JS<br>& jQuery</li>
+                  <li class="about-me__circle-item">
+                     <svg class='about-me__circle-svg' viewBox ='0 0 100 100'>
+<circle class='outer-circle' stroke-dasharray="95, 158" ; r='25' cx='50' cy='50'/>
+<circle class='inner-circle' r='35' cx='50' cy='50'/>
+</svg>   <span class="about-me__circle-text">HTML5</span>
+                  </li>
+                  <li class="about-me__circle-item">
+                     <svg class='about-me__circle-svg' viewBox ='0 0 100 100'>
+<circle class='outer-circle' stroke-dasharray="10, 158" ; r='25' cx='50' cy='50'/>
+<circle class='inner-circle' r='35' cx='50' cy='50'/>
+</svg><span class="about-me__circle-text">CSS3    </span>
+                  </li>
+                  <li class="about-me__circle-item"><svg class='about-me__circle-svg' viewBox ='0 0 100 100'>
+<circle class='outer-circle' stroke-dasharray="95, 158" ; r='25' cx='50' cy='50'/>
+<circle class='inner-circle' r='35' cx='50' cy='50'/>
+</svg> <span class="about-me__circle-text">JS<br>& jQuery   </span>
+                  </li>
                 </ul>
               </li>
               <li class="about-me__skills-item about-me__skills-item--backend">
                 <div class="about-me__title-skills">Backend</div>
                 <ul class="about-me__circle-list">
-                  <li class="about-me__circle-item">PHP</li>
-                  <li class="about-me__circle-item">mySQL</li>
-                  <li class="about-me__circle-item">Node.js<br>& npm</li>
-                  <li class="about-me__circle-item">Mongo.db</li>
+                  <li class="about-me__circle-item">
+                               <svg class='about-me__circle-svg' viewBox ='0 0 100 100'>
+<circle class='outer-circle' stroke-dasharray="111, 158" ; r='25' cx='50' cy='50'/>
+<circle class='inner-circle' r='35' cx='50' cy='50'/>
+</svg><span class="about-me__circle-text">PHP   </span>
+                  </li>
+                  <li class="about-me__circle-item">
+                     <svg class='about-me__circle-svg' viewBox ='0 0 100 100'>
+<circle class='outer-circle' stroke-dasharray="120, 158" ; r='25' cx='50' cy='50'/>
+<circle class='inner-circle' r='35' cx='50' cy='50'/>
+</svg>   <span class="about-me__circle-text">mySQL</span>
+                  </li>
+                  <li class="about-me__circle-item">
+                     <svg class='about-me__circle-svg' viewBox ='0 0 100 100'>
+<circle class='outer-circle' stroke-dasharray="100, 158" ; r='25' cx='50' cy='50'/>
+<circle class='inner-circle' r='35' cx='50' cy='50'/>
+</svg>  <span class="about-me__circle-text">Node.js<br>& npm </span>
+                  </li>
+                  <li class="about-me__circle-item">
+                     <svg class='about-me__circle-svg' viewBox ='0 0 100 100'>
+<circle class='outer-circle' stroke-dasharray="3, 158" ; r='25' cx='50' cy='50'/>
+<circle class='inner-circle' r='35' cx='50' cy='50'/>
+</svg>   <span class="about-me__circle-text">Mongo.db</span>
+                  </li>
                 </ul>
               </li>
               <li class="about-me__skills-item about-me__skills-item--workflow">
                 <div class="about-me__title-skills">WorkFlow</div>
                 <ul class="about-me__circle-list">
-                  <li class="about-me__circle-item">Git</li>
-                  <li class="about-me__circle-item">Gulp</li>
-                  <li class="about-me__circle-item">Bower</li>
+                  <li class="about-me__circle-item">
+                     <svg class='about-me__circle-svg' viewBox ='0 0 100 100'>
+<circle class='outer-circle' stroke-dasharray="14, 158" ; r='25' cx='50' cy='50'/>
+<circle class='inner-circle' r='35' cx='50' cy='50'/>
+</svg> <span class="about-me__circle-text">Git  </span>
+                  </li>
+                  <li class="about-me__circle-item">
+                     <svg class='about-me__circle-svg' viewBox ='0 0 100 100'>
+<circle class='outer-circle' stroke-dasharray="60, 158" ; r='25' cx='50' cy='50'/>
+<circle class='inner-circle' r='35' cx='50' cy='50'/>
+</svg><span class="about-me__circle-text">Gulp   </span>
+                  </li>
+                  <li class="about-me__circle-item">
+                     <svg class='about-me__circle-svg' viewBox ='0 0 100 100'>
+<circle class='outer-circle' stroke-dasharray="30, 158" ; r='25' cx='50' cy='50'/>
+<circle class='inner-circle' r='35' cx='50' cy='50'/>
+</svg> <span class="about-me__circle-text">Bower  </span>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -136,10 +191,10 @@
           </div>
           <div class="footer__column footer__column--center">
             <ul class="footer__pages-list pages-list"> 
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Мои работы</a></li>
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Обо мне</a></li>
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Блог</a></li>
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Авторизация</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="my-works.html">Мои работы</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="about.html">Обо мне</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="blog.html">Блог</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="index.html">Авторизация</a></li>
             </ul>
             <ul class="footer__socials social-list"> 
               <li class="social-list__item">  <a class="social-list__link" href="https://vk.com/maks_era">

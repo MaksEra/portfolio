@@ -1,13 +1,14 @@
 .button {
   background-color: $moss;
   cursor: pointer;
-  font-family: "robotomedium";
+  font-family: "robotoregular";
   color: $white;
+  transition: .3s;
   &--welcome {
     text-decoration: none;
     display: inline-block;
-    padding: 4% 2%;
-    border-left: 3px solid $white;
+    padding: 15px 8px;
+    border-left: 2px solid $white;
     &:first-child {
       border: none;
     }
@@ -22,6 +23,7 @@
     padding-bottom: 15px;
     border: none;
     border-left: 2px solid $white;
+    transition: .3s;
     &:first-child {
       border: none;
     }

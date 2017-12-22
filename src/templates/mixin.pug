@@ -13,3 +13,18 @@ mixin socialListMixin(elemClassName, values)
                     svg(class=`social-list__icon social-list__icon--${val[0]}` )
                         use(xlink:href=("assets/img/icons/sprite.svg")+ '#' + val[0])
 
+//- - var values = [['Мои работы','#'],['Обо мне','#'],['Блог','#'],['Авторизация','#']];
+
+mixin pagesListMixin(elemClassName,values,numberActiveItem)
+    ul(class=`${elemClassName} pages-list`) 
+        each val, index in values
+            - if(index === numberActiveItem) {
+            li(class="pages-list__item pages-list__item--active")   
+                a(class="pages-list__link" href=val[1]).
+                    #{val[0]}
+            - } else {
+            li(class="pages-list__item")
+                a(class="pages-list__link" href=val[1]).
+                    #{val[0]}
+            - }
+                    

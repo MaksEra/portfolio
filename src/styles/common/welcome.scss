@@ -5,17 +5,14 @@
   text-align: center;
   width: 380px;
   background-color: rgba(#122620, 0.6);
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
   z-index: 1;
 
   &__card {
   }
   &__top {
-    margin-bottom: 32px;
-    @include mobile {
-      margin-bottom: 15px;
-    }
+    margin-bottom: 15px;
   }
   &__bottom {
   }
@@ -35,7 +32,7 @@
     position: relative;
     font-size: 28px;
     font-family: "sansus";
-    margin-bottom: 13px;
+    margin-bottom: 8px;
   }
   &__text-amplua {
     margin-bottom: 35px;
@@ -61,7 +58,7 @@
   &__blog {
     flex: 1 1 auto;
   }
-  @include mobile {
+  @include phones {
     padding-top: 25px;
   }
 }

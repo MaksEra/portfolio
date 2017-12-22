@@ -14,10 +14,10 @@
   <body>
     <div class="wrapper wrapper__blog">
       <header class="header undefined">
+        <svg class="header__triangle" width="100%">
+          <use xlink:href="assets/img/icons/sprite.svg#bg"></use>
+        </svg>
         <div class="container haeder__container">
-          <svg class="header__triangle" width="100%">
-            <use xlink:href="assets/img/icons/sprite.svg#bg"></use>
-          </svg>
           <ul class="header__socials social-list"> 
             <li class="social-list__item">  <a class="social-list__link" href="https://vk.com/maks_era">
                 <svg class="social-list__icon social-list__icon--vk">
@@ -45,14 +45,22 @@
               <div class="person-card__text-amplua">Статьи, которые я написал</div>
             </div>
           </div>
-          <div class="header__hamburger-menu"><a class="hamburger" href="#"><span></span></a></div><a class="bottom-arrow" href="#" data-scroll-to="1"></a>
+          <div class="header__hamburger-menu"><a class="hamburger" href="#"><span></span></a></div>
+          <ul class="header__pages-list pages-list"> 
+            <li class="pages-list__item"><a class="pages-list__link" href="my-works.html">Мои работы</a></li>
+            <li class="pages-list__item"><a class="pages-list__link" href="./about.html">Обо мне</a></li>
+            <li class="pages-list__item pages-list__item--active">  <a class="pages-list__link" href="./blog.html">Блог</a></li>
+            <li class="pages-list__item"><a class="pages-list__link" href="/">Авторизация</a></li>
+          </ul><a class="bottom-arrow" href="#" data-scroll-to="1"></a>
         </div>
       </header>
       <main class="main main--articles">
         <div class="container main__container main__container--articles">
-          <aside class="articles-nav">
+          <aside class="articles-nav"><a class="articles-nav__swipe" href="#">
+              <svg class="articles-nav__swipe-svg articles-nav__swipe-svg--swipe_svg">
+                <use xlink:href="assets/img/icons/sprite.svg#swipe_svg"></use>
+              </svg></a>
             <ul class="articles-nav__list">
-              <!--ПОтом пересмотреть и может как то исправить -->
               <li class="articles-nav__item articles-nav__item--active">Самое важное в SASS</li>
               <li class="articles-nav__item">Приёмы в вёрстке, без которых не обходится ни один сайт</li>
               <li class="articles-nav__item">Самый необходимый набор Gulp плагинов</li>
@@ -96,10 +104,10 @@
           </div>
           <div class="footer__column footer__column--center">
             <ul class="footer__pages-list pages-list"> 
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Мои работы</a></li>
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Обо мне</a></li>
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Блог</a></li>
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Авторизация</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="my-works.html">Мои работы</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="about.html">Обо мне</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="blog.html">Блог</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="index.html">Авторизация</a></li>
             </ul>
             <ul class="footer__socials social-list"> 
               <li class="social-list__item">  <a class="social-list__link" href="https://vk.com/maks_era">

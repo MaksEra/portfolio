@@ -4,10 +4,11 @@
     width: 30px;
     display: inline-block;
     font-size: 0px;
-    margin-right: 30px;
+    margin-right: 24px;
     opacity: 0.5;
     &:hover {
       opacity: 1;
+      color: $fern-green;
     }
     &:last-child {
       margin-right: 0;

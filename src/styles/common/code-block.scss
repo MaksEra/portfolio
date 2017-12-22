@@ -5,6 +5,8 @@
     padding: 1em;
     padding-left: 4.2em;
     counter-reset: line;
+    overflow: auto;
+    white-space: pre-wrap;
   }
   &__code {
   }

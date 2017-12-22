@@ -4,12 +4,18 @@
 
   &__container {
     &--articles {
+      width: 100%;
       display: flex;
+      @include tablet {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
   }
 
   &--articles {
     display: flex;
+    flex:1 1 auto;
     padding-top: 68px;
     padding-bottom: 66px;
   }

@@ -43,9 +43,6 @@
     transform: rotateY(180deg);
   }
   @include tablet {
-    width: 350px;
-  }
-  @include tablet {
-    width: 300px;
+    margin: 0 auto;
   }
 }

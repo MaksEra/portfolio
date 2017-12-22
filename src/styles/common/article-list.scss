@@ -3,16 +3,20 @@
   &__item {
     margin-bottom: 143px;
     position: relative;
-    width: 80%;
+    width: 100%;
+    max-width: 700px;
     &:after {
       content: "";
-      width: 681px;
+      width: 80%;
       height: 5px;
       opacity: 0.07;
       background-color: $charcoal-grey;
       position: absolute;
       bottom: -13%;
       left: 0;
+      @include mobile {
+        bottom: -28px;
+      }
     }
     &:last-child {
       margin-bottom: 0;
@@ -20,15 +24,25 @@
         display: none;
       }
     }
+    @include mobile {
+      margin-bottom: 56px;
+    }
   }
   &__item-title {
     font-family: "sansus";
     font-size: 35px;
     margin-bottom: 28px;
+    @include mobile{
+      font-size: 21px;
+      margin-bottom: 14px;
+    }
   }
   &__item-date {
     color: $fern-green-70;
     margin-bottom: 25px;
+    @include mobile {
+      margin-bottom: 14px;
+    }
   }
   &__item-text {
     line-height: 1.63;

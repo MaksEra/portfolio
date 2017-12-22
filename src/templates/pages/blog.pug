@@ -4,11 +4,14 @@ block variables
     - var title = 'Блог';
     - var wrapperClassName = 'wrapper__blog';
     - var onPage = true;
+    - pagesListActiveItem = 2;
 
 block main 
     main(class='main main--articles')
         .container.main__container.main__container--articles
             aside(class="articles-nav")
+                a.articles-nav__swipe(href="#")
+                    +svgTemp('articles-nav__swipe-svg', 'swipe_svg')
                 - 
                     var 
                     articles_themes = [
@@ -17,7 +20,6 @@ block main
                         'Почему я выбрал Jade'
                         ];
                 ul(class="articles-nav__list")
-                    //ПОтом пересмотреть и может как то исправить 
                     li(class="articles-nav__item articles-nav__item--active").
                         Самое важное в SASS
                     each theme in articles_themes

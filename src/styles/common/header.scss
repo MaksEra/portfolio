@@ -29,10 +29,10 @@
 
   &__socials {
     position: absolute;
-    top: 53px;
-    left: 3;
+    top: -57px;
+    left: 3px;
     @include mobile {
-      top: 13px;
+      top: -77px;
     }
   }
   &__avatar {
@@ -43,6 +43,53 @@
     }
   }
   &__hamburger-menu {
+    position: absolute;
+    top: -73px;
+    right: 3%;
+    @include mobile {
+      top: -93px;
+    }
+    &--z-indexed {
+      z-index: 20;
+    }
+  }
+  &__pages-list {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: $fern-green-70;
+    padding-top: 30px;
+    z-index: 10;
+    display: none;
+
+    .pages-list__item {
+      display: block;
+      margin-right: 0;
+      position: relative;
+      margin-bottom: 40px;
+      &--active {
+        &:after {
+          content: "";
+          height: 4px;
+          width: 100px;
+          position: absolute;
+          bottom: -24px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: $white;
+        }
+      }
+    }
+    .pages-list__link {
+      font-size: 35px;
+    }
+    &--visible {
+      display: block;
+    }
   }
 
   &--works {

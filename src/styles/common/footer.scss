@@ -10,7 +10,7 @@
     &--top {
       padding-bottom: 49px;
       @include tablet {
-        padding-bottom: 9px;
+        padding: 0 25px 10px;
       }
     }
     &--bottom {
@@ -76,10 +76,9 @@
     }
   }
   &__pages-list {
+    margin-bottom: 29px;
   }
   &__socials {
-    .social-list__item {
-    }
   }
   &__column--right {
     padding-right: 0;
@@ -100,6 +99,8 @@
     opacity: 0.85;
   }
   &__copyright {
+    padding-right: 8px;
+    padding-left: 8px;
     padding-top: 9px;
     padding-bottom: 12px;
     flex: 1 1 100%;

@@ -5,12 +5,7 @@ footer(class=`footer ${footer_modif}`)
                             Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
                     .footer__column.footer__column--center
                         - var pages = ['Мои работы', "Обо мне", 'Блог', 'Авторизация']
-                            ul(class="footer__pages-list pages-list") 
-                                //-цикл текcта ссылок
-                                each val in pages
-                                    li(class="pages-list__item")
-                                        a(class="pages-list__link" href='#').
-                                            #{val}
+                            +pagesListMixin('footer__pages-list',[['Мои работы','my-works.html'],['Обо мне','about.html'],['Блог','blog.html'],['Авторизация','index.html']])
                             +socialListMixin('footer__socials', [['vk','https://vk.com/maks_era'],['github','https://github.com/MaksEra'],['in','#']])
                                             
                     .footer__column.footer__column--right

@@ -1,9 +1,9 @@
 header(class=`header ${header_modif}`)
+                svg(class="header__triangle" width="100%")
+                    use(xlink:href=("assets/img/icons/sprite.svg") +"#bg")
                 .container.haeder__container
                     //- svg для фона
                     block headerSvg
-                    svg(class="header__triangle"  width="100%" )
-                        use(xlink:href=("assets/img/icons/sprite.svg") +"#bg")
                     +socialListMixin('header__socials', [['vk','https://vk.com/maks_era'],['github','https://github.com/MaksEra'],['in','#']])
                     
                     block person-card
@@ -19,4 +19,5 @@ header(class=`header ${header_modif}`)
                     div(class="header__hamburger-menu")
                         a(href="#" class="hamburger")
                             span
+                    +pagesListMixin('header__pages-list',[['Мои работы','my-works.html'],['Обо мне','./about.html'],['Блог','./blog.html'],['Авторизация','/']], pagesListActiveItem)
                     a(href='#' class="bottom-arrow" data-scroll-to="1")

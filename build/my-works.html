@@ -14,12 +14,12 @@
   <body>
     <div class="wrapper wrapper__works">
       <header class="header header__works">
+        <svg class="header__triangle" width="100%">
+          <use xlink:href="assets/img/icons/sprite.svg#bg"></use>
+        </svg>
         <div class="container haeder__container">
           <svg class="header__svg-portfolio header__svg-portfolio--portfolio_header">
             <use xlink:href="assets/img/icons/sprite.svg#portfolio_header"></use>
-          </svg>
-          <svg class="header__triangle" width="100%">
-            <use xlink:href="assets/img/icons/sprite.svg#bg"></use>
           </svg>
           <ul class="header__socials social-list"> 
             <li class="social-list__item">  <a class="social-list__link" href="https://vk.com/maks_era">
@@ -44,7 +44,13 @@
               <div class="person-card__whoIsSite">Личный сайт веб разрабочика</div>
             </div>
           </div>
-          <div class="header__hamburger-menu"><a class="hamburger" href="#"><span></span></a></div><a class="bottom-arrow" href="#" data-scroll-to="1"></a>
+          <div class="header__hamburger-menu"><a class="hamburger" href="#"><span></span></a></div>
+          <ul class="header__pages-list pages-list"> 
+            <li class="pages-list__item pages-list__item--active">  <a class="pages-list__link" href="my-works.html">Мои работы</a></li>
+            <li class="pages-list__item"><a class="pages-list__link" href="./about.html">Обо мне</a></li>
+            <li class="pages-list__item"><a class="pages-list__link" href="./blog.html">Блог</a></li>
+            <li class="pages-list__item"><a class="pages-list__link" href="/">Авторизация</a></li>
+          </ul><a class="bottom-arrow" href="#" data-scroll-to="1"></a>
         </div>
       </header>
       <main class="main main--works">
@@ -114,10 +120,10 @@
           </div>
           <div class="footer__column footer__column--center">
             <ul class="footer__pages-list pages-list"> 
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Мои работы</a></li>
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Обо мне</a></li>
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Блог</a></li>
-              <li class="pages-list__item"><a class="pages-list__link" href="#">Авторизация</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="my-works.html">Мои работы</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="about.html">Обо мне</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="blog.html">Блог</a></li>
+              <li class="pages-list__item"><a class="pages-list__link" href="index.html">Авторизация</a></li>
             </ul>
             <ul class="footer__socials social-list"> 
               <li class="social-list__item">  <a class="social-list__link" href="https://vk.com/maks_era">
