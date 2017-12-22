@@ -17,6 +17,18 @@
       transform: translate(-50%, -50%);
     }
   }
+  &--underlined-white {
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 90px;
+      height: 3px;
+      background-color: $white;
+      transform: translate(-50%, -50%);
+    }
+  }
   &__svg-works {
     position: absolute;
     top: 50%;

@@ -6,8 +6,8 @@ block variables
     - var onPage = false;
 
 block content
-    a(href='#').authorization-button Авторизоваться
-    .flipper
+    a(href='#').auth-button#auth Авторизоваться
+    .flipper#flipper
         .flipper__wrapper
             .flipper__welcome.welcome
                 .welcome__top
@@ -25,7 +25,7 @@ block content
                         a(href='blog.html').button.button--welcome.welcome__blog Блог
             
             .flipper__authorization.authorization
-                h1.title.title--underlined.authorization__title Авторизуйтесь
+                h1.authorization__title.title--underlined-white Авторизуйтесь
                 form(action="authorization.php")
                     .authorization__wrapper-form
                         label.authorization__label
@@ -41,7 +41,7 @@ block content
                             <div class="authorization__checkbox-fake"></div>
                             <div class="authorization__input-text">Я человек</div>
                         </label>
-                        h5.title.authorization__title-isHuman Вы точно не робот?
+                        h5.authorization__title-isHuman Вы точно не робот?
                         <div class="authorization__row">
                             <label class="authorization__label-radio authorization__label-radio--yes">
                                 <input name="user_isntRobot" type="radio" class="authorization__input  authorization__input--radio" value='yes' >
@@ -55,7 +55,7 @@ block content
                             </label>
                         </div>
                         <div class="authorization__row">
-                            a(href='#').button.button--authorization.authorization__to-main На главную 
+                            a(href='#').button.button--authorization.authorization__to-main#auth-on-main На главную 
                             <button type="submit" class="button button--authorization authorization__submit ">Войти</button>
                         </div>
     .welcome-copyright &copy; Максим Егоров | создано с любовью в LoftSchool | 2017

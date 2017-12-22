@@ -12,8 +12,8 @@
     <script src="assets/js/bundle.js"></script>
   </head>
   <body>
-    <div class="wrapper wrapper__welcome"><a class="authorization-button" href="#">Авторизоваться</a>
-      <div class="flipper">
+    <div class="wrapper wrapper__welcome"><a class="auth-button" href="#" id="auth">Авторизоваться</a>
+      <div class="flipper" id="flipper">
         <div class="flipper__wrapper">
           <div class="flipper__welcome welcome">
             <div class="welcome__top">
@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="flipper__authorization authorization">
-            <h1 class="title title--underlined authorization__title">Авторизуйтесь</h1>
+            <h1 class="authorization__title title--underlined-white">Авторизуйтесь</h1>
             <form action="authorization.php">
               <div class="authorization__wrapper-form">
                 <label class="authorization__label">
@@ -59,7 +59,7 @@
 <div class="authorization__checkbox-fake"></div>
 <div class="authorization__input-text">Я человек</div>
 </label>
-                <h5 class="title authorization__title-isHuman">Вы точно не робот?</h5><div class="authorization__row">
+                <h5 class="authorization__title-isHuman">Вы точно не робот?</h5><div class="authorization__row">
 <label class="authorization__label-radio authorization__label-radio--yes">
 <input name="user_isntRobot" type="radio" class="authorization__input  authorization__input--radio" value='yes' >
 <div class="authorization__radio-fake"></div>
@@ -71,7 +71,7 @@
 <div class="authorization__input-text">Не уверен</div>
 </label>
 </div>
-<div class="authorization__row"><a class="button button--authorization authorization__to-main" href="#">На главную </a><button type="submit" class="button button--authorization authorization__submit ">Войти</button>
+<div class="authorization__row"><a class="button button--authorization authorization__to-main" href="#" id="auth-on-main">На главную </a><button type="submit" class="button button--authorization authorization__submit ">Войти</button>
 </div>
               </div>
             </form>
