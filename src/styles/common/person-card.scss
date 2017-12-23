@@ -1,9 +1,13 @@
 .person-card {
-  width: 230px;
+  width: 270px;
   margin: 0 auto;
+  padding-top: 100px;
   color: $white;
   text-align: center;
   position: relative;
+  @include phones {
+    padding-top: 0;
+  }
 
   &__top {
   }
