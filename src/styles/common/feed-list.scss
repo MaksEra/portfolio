@@ -40,7 +40,9 @@
     font-family: "robotoitalic";
     text-align: center;
   }
-  @include mobile {
+  @include phones {
     flex-direction: column;
+    margin: 0 auto 30px;
   }
+
 }

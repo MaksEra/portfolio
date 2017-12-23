@@ -23,7 +23,10 @@
   &__title {
     font-size: 35px;
     &:after {
-      top: 75px;
+      top: 76px;
+      @include phones {
+        top: 50px;
+      }
     }
   }
   &__list {

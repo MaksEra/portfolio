@@ -1,40 +1,37 @@
 header(class=`header ${header_modif}`)
-                svg(class="header__triangle" width="100%")
-                    use(xlink:href=("assets/img/icons/sprite.svg") +"#bg")
-                .container.header__container
-                    //- svg для фона
-                    +socialListMixin('header__socials', [['vk','https://vk.com/maks_era'],['github','https://github.com/MaksEra'],['in','#']])
-                    block headerSvg
+    svg(class="header__triangle" width="100%")
+        use(xlink:href=("assets/img/icons/sprite.svg") +"#bg")
+    .container.header__container
+        //- svg для фона
+        +socialListMixin('header__socials', [['vk','https://vk.com/maks_era'],['github','https://github.com/MaksEra'],['in','#']])
+        block headerSvg
 
-                    block person-card
-                        div(class="header__avatar person-card") 
-                            .person-card__top
-                                .person-card__pic
-                                    img(class='person-card__img' src=("assets/img/content/avatar.jpg"))
-                            .person-card__bottom
-                                .person-card__name-text Блог
-                                    +svgTemp("person-card__svg-blog", 'blog_header')
-                                .person-card__text-amplua.
-                                    Статьи, которые я написал
-                    //-div(class="header__hamburger-menu")
-                        //-a(href="#" class="hamburger")
-                            span
-                .hamburger-menu
-                        .hamburger-menu-toggle#ham-toggle
-                            .one
-                            .two
-                            .three
-                        nav.hamburger-menu__nav
-                            ul(role="navigation").nav__list.hidden
-                                li.nav__list-item
-                                    a(href="my-works.html" class="nav__link")
-                                        span.nav__link-text Мои работы
-                                li.nav__list-item
-                                    a(href="blog.html" class="nav__link")
-                                        span.nav__link-text Блог
-                                li.nav__list-item
-                                    a(href="about.html" class="nav__link")
-                                        span.nav__link-text Обо мне
-                                li.nav__list-item
-                                    a(href="index.html" class="nav__link")
-                                        span.nav__link-text Авторизация
+        block person-card
+            div(class="header__avatar person-card") 
+                .person-card__top
+                    .person-card__pic
+                        img(class='person-card__img' src=("assets/img/content/avatar.jpg"))
+                .person-card__bottom
+                    .person-card__name-text Блог
+                        +svgTemp("person-card__svg-blog", 'blog_header')
+                    .person-card__text-amplua.
+                        Статьи, которые я написал
+.hamburger-menu
+    .hamburger-menu-toggle#ham-toggle
+        .one
+        .two
+        .three
+    nav.hamburger-menu__nav
+        ul(role="navigation").nav__list.hidden
+            li.nav__list-item
+                a(href="my-works.html" class="nav__link")
+                    span.nav__link-text Мои работы
+            li.nav__list-item
+                a(href="blog.html" class="nav__link")
+                    span.nav__link-text Блог
+            li.nav__list-item
+                a(href="about.html" class="nav__link")
+                    span.nav__link-text Обо мне
+            li.nav__list-item
+                a(href="index.html" class="nav__link")
+                    span.nav__link-text Авторизация

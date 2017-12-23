@@ -7,6 +7,9 @@
     margin-right: 24px;
     opacity: 0.5;
     transition: .3s;
+    @include phones {
+      margin-right: 18px;
+    }
     &:hover {
       opacity: 1;
     }
@@ -28,5 +31,9 @@
     &:hover {
       fill: $fern-green;
     }
+  }
+  @include phones {
+    margin-left: 10px;
+    margin-top: -10px;
   }
 }
