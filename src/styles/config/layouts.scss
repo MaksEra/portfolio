@@ -62,12 +62,14 @@ body {
     background-position: 100% auto;
   }
   &__welcome {
-    //background: url("../img/water.jpg") center center no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    @include tablet {
+      background: url("../img/water.jpg") center center no-repeat;
+      background-size: cover;
+    }
   }
 }
 
