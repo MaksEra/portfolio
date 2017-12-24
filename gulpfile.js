@@ -103,6 +103,12 @@ function fonts() {
         .pipe(gulp.dest(paths.fonts.dest));
 }
 
+// replace water.js
+function water() {
+    return gulp.src('src/assets/water.js')
+        .pipe(gulp.dest(paths.scripts.dest));
+}
+
 exports.templates = templates;
 exports.styles = styles;
 exports.scripts = scripts;
@@ -113,6 +119,6 @@ exports.watch = watch;
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel(styles, templates, img, fonts, scripts),
+    gulp.parallel(styles, templates, img, fonts, water, scripts),
     gulp.parallel(watch, server)
 ));
