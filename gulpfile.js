@@ -20,19 +20,19 @@ const paths = {
     },
     styles: {
         src: 'src/styles/**/*.scss',                //paths.styles.src
-        dest: 'build/assets/styles/'                //paths.styles.dest
+        dest: 'build/styles/'                       //paths.styles.dest
     },    
     img: {
         src: 'src/img/**/*.*',                      //paths.img.src
-        dest: 'build/assets/img/'                   //paths.img.dest
+        dest: 'build/img/'                          //paths.img.dest
     },
     fonts: {
-        src: 'src/fonts/**/*.*',                   //paths.fonts.src
-        dest: 'build/assets/fonts/'                //paths.fonts.dest
+        src: 'src/fonts/**/*.*',                    //paths.fonts.src
+        dest: 'build/fonts/'                        //paths.fonts.dest
     },
     scripts: {
         src: 'src/scripts/**/*.js',                 //paths.scripts.src
-        dest: 'build/assets/js/'                    //paths.scripts.dest
+        dest: 'build/js/'                           //paths.scripts.dest
     }
 }
 

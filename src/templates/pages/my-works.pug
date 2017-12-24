@@ -8,8 +8,8 @@ block variables
     //- pagesListActiveItem = 0;
 
 block scripts
-    script(src="assets/js/common.js")
-    script(src="assets/js/my-works.js")
+    script(src="js/common.js")
+    script(src="js/my-works.js")
 
 block headerSvg
     +svgTemp("header__svg-portfolio", 'portfolio_header')
@@ -19,7 +19,7 @@ block person-card
     div(class="header__avatar person-card") 
         .person-card__top
             .person-card__pic
-                img(class='person-card__img' src=("assets/img/content/avatar.jpg"))
+                img(class='person-card__img' src=("img/content/avatar.jpg"))
         .person-card__bottom
             .person-card__fio.
                 Максим Егоров
@@ -33,7 +33,7 @@ block main
                 +svgTemp("title__svg-works", 'works_header')
             section.my-works
                 .my-works__slider
-                    img(src=('assets/img/content/site1.png')).my-works__slider-img
+                    img(src=('img/content/site1.png')).my-works__slider-img
                 .my-works__decription 
                     .my-works__decription-wrapper
                         .my-works__site-name.
@@ -41,20 +41,20 @@ block main
                         .my-works__site-technogies HTML , CSS, JAVASCRIPT
                         a(href='#').my-works__site-link
                             svg.my-works__svg-link
-                                use(xlink:href=("assets/icons/sprite/sprite.svg")+"#link")
+                                use(xlink:href=("icons/sprite/sprite.svg")+"#link")
                             | Посмотреть сайт   
                 .my-works__slider-buttons
                     a(href='#').my-works__button-left
-                        img(src=('assets/img/content/site2.png')).my-works__img
+                        img(src=('img/content/site2.png')).my-works__img
                         +svgTemp('my-works__arrow-down','portf_arrow_down')
                     a(href='#').my-works__button-right
-                        img(src=('assets/img/content/site3.png')).my-works__img
+                        img(src=('img/content/site3.png')).my-works__img
                         +svgTemp('my-works__arrow-up','portf_arrow_up')
             h1.title.title--underlined Что обо мне <br>говорят
             ul.feeds-list
                 li.feeds-list__item
                     .feeds-list__picture
-                        img.feeds-list__img(src=("assets/img/content/feeds_avatar1.png"))
+                        img.feeds-list__img(src=("img/content/feeds_avatar1.png"))
                     .feeds-list__description
                         .feeds-list__text.
                             Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
@@ -62,7 +62,7 @@ block main
                         .feeds-list__amplua — основатель Loftschool
                 li.feeds-list__item
                     .feeds-list__picture
-                        img.feeds-list__img(src=("assets/img/content/feeds_avatar2.png"))
+                        img.feeds-list__img(src=("img/content/feeds_avatar2.png"))
                     .feeds-list__description
                         .feeds-list__text.
                             Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
@@ -78,7 +78,7 @@ block main
                     button(type="reset").button.callback-form__reset Очистить
             a(href='#').arrow-top
                 svg.arrow-top__svg
-                    use(xlink:href=("assets/icons/sprite/sprite.svg")+"#portf_arrow_up")
+                    use(xlink:href=("icons/sprite/sprite.svg")+"#portf_arrow_up")
 
                     
                 

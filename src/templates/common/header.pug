@@ -1,6 +1,6 @@
 header(class=`header ${header_modif}`)
     svg(class="header__triangle" width="100%")
-        use(xlink:href=("assets/img/icons/sprite.svg") +"#bg")
+        use(xlink:href=("img/icons/sprite.svg") +"#bg")
     .container.header__container
         //- svg для фона
         +socialListMixin('header__socials', [['vk','https://vk.com/maks_era'],['github','https://github.com/MaksEra'],['in','#']])
@@ -10,7 +10,7 @@ header(class=`header ${header_modif}`)
             div(class="header__avatar person-card") 
                 .person-card__top
                     .person-card__pic
-                        img(class='person-card__img' src=("assets/img/content/avatar.jpg"))
+                        img(class='person-card__img' src=("img/content/avatar.jpg"))
                 .person-card__bottom
                     .person-card__name-text Блог
                         +svgTemp("person-card__svg-blog", 'blog_header')

@@ -6,8 +6,8 @@ block variables
     - var onPage = false;
 
 block scripts
-    script(src="assets/js/common.js")
-    script(src="assets/js/index.js")
+    script(src="js/common.js")
+    script(src="js/index.js")
 
 block content
     a(href='#').auth-button#auth Авторизоваться
@@ -16,7 +16,7 @@ block content
             .flipper__welcome.welcome
                 .welcome__top
                     .welcome__pic
-                        img(class='welcome__img' src=("assets/img/content/avatar.jpg"))
+                        img(class='welcome__img' src=("img/content/avatar.jpg"))
                 .welcome__bottom
                     .welcome__name-text.
                         Максим Егоров
@@ -34,11 +34,11 @@ block content
                     .authorization__wrapper-form
                         label.authorization__label
                             svg.authorization__input-svg
-                                use(xlink:href=(`assets/img/icons/sprite.svg`)+'#login')
+                                use(xlink:href=(`img/icons/sprite.svg`)+'#login')
                             input(type="text" name='user_login' placeholder='Логин' class="authorization__input" required)
                         label.authorization__label
                             svg.authorization__input-svg
-                                use(xlink:href=(`assets/img/icons/sprite.svg`)+"#password")
+                                use(xlink:href=(`img/icons/sprite.svg`)+"#password")
                             input(type="text" name='user_login' placeholder='Пароль' class="authorization__input" required)
                         <label class="authorization__label-isHuman">
                             <input type="checkbox" name="user_isHuman" class="authorization__input authorization__input--checkbox" value='yes'>
