@@ -64,7 +64,7 @@ function styles() {
 
 // webpack
 function scripts() {
-    return gulp.src('src/scripts/main.js')
+    return gulp.src('src/scripts/**/*.js')
         .pipe(gp.plumber())
         .pipe(gulpWebpack(webpackConfig, webpack)) 
         .pipe(gulp.dest(paths.scripts.dest));
