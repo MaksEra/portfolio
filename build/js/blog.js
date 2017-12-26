@@ -1,2 +1,2 @@
-webpackJsonp([2],{0:function(n,t,o){"use strict";(function(n){n(function(){n("#ham-toggle").on("click",function(){n(this).toggleClass("on"),n(".hamburger-menu").toggleClass("on"),n(".nav__list").toggleClass("hidden")})})}).call(t,o(1))},5:function(n,t,o){"use strict";o(0)()}},[5]);
+webpackJsonp([2],{1:function(n,t,o){"use strict";(function(n){n(function(){n("#ham-toggle").on("click",function(){n(this).toggleClass("on"),n(".hamburger-menu").toggleClass("on"),n(".nav__list").toggleClass("hidden")})})}).call(t,o(0))},6:function(n,t,o){"use strict";var s=o(2),c=o(1);s(),c()}},[6]);
 //# sourceMappingURL=blog.js.map

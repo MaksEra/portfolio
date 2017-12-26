@@ -14,6 +14,10 @@ html(lang="en")
         meta(content="ie=edge" http-equiv="x-ua-compatible")
         link(rel='stylesheet' href='styles/main.min.css')
     body
+        .preloader#preloader
+            .preloader__spinner
+                .preloader__animation
+                .preloader__percent#preloader__percent 0%
         div(class=`wrapper ${wrapperClassName}`)
             - if (onPage) {
             include common/header
